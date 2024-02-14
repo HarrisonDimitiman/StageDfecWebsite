@@ -14,15 +14,15 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{ asset('/assets2/css/bootstrap.css') }}">
-    <link rel="stylesheet" href="{{ asset('/assets2/css/animate.css') }}">
-    <link rel="stylesheet" href="{{ asset('/assets2/css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('/assets2/css/aos.css') }}">
-    <link rel="stylesheet" href="{{ asset('/assets2/css/magnific-popup.css') }}">
-    <link rel="stylesheet" href="{{ asset('/assets2/fonts/ionicons/css/ionicons.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('/assets2/fonts/fontawesome/css/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('/assets2/fonts/flaticon/font/flaticon.css') }}">
-    <link rel="stylesheet" href="{{ asset('/assets2/css/style.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('/assets2/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('/assets2/css/animate.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('/assets2/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('/assets2/css/aos.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('/assets2/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('/assets2/fonts/ionicons/css/ionicons.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('/assets2/fonts/fontawesome/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('/assets2/fonts/flaticon/font/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('/assets2/css/style.css') }}">
 
   </head>
   <body>
@@ -34,7 +34,7 @@
           
           @if($lcd->logo != null)
             @if($lcd->logo != 'DFEC')
-              <img src="{{ asset('storage/'.$lcd->logo) }}" alt="" width="100px" height="100px">
+              <img src="{{ secure_asset('storage/'.$lcd->logo) }}" alt="" width="100px" height="100px">
             @else
               <a class="navbar-brand" href="{{ URL::to('/') }}">{{ $lcd->logo }}</a>
             @endif
@@ -95,7 +95,7 @@
 
         @if ($slider->isNotEmpty())
           @foreach ($slider as $slider)
-            <div class="slider-item" style="background-image: url('{{ asset('storage/'.$slider->image) }}');">
+            <div class="slider-item" style="background-image: url('{{ secure_asset('storage/'.$slider->image) }}');">
               <div class="container">
                 <div class="row slider-text align-items-center justify-content-center">
                   <div class="col-md-8 text-center col-sm-12 ">
@@ -106,7 +106,7 @@
             </div>
           @endforeach
         @else
-          <div class="slider-item" style="background-image: url('{{ asset('assets2/img/header1.jpg') }}');">
+          <div class="slider-item" style="background-image: url('{{ secure_assetsecure_asset('assets2/img/header1.jpg') }}');">
             <div class="container">
               <div class="row slider-text align-items-center justify-content-center">
                 <div class="col-md-8 text-center col-sm-12 ">
@@ -166,18 +166,18 @@
     </footer>
     {{-- <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#cf1d16"/></svg></div> --}}
 
-    <script src="{{ asset('/assets2/js/jquery-3.2.1.min.js') }}"></script>
-    <script src="{{ asset('/assets2/js/popper.min.js') }}"></script>
-    <script src="{{ asset('/assets2/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('/assets2/js/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('/assets2/js/jquery.waypoints.min.js') }}"></script>
-    <script src="{{ asset('/assets2/js/aos.js') }}"></script>
+    <script src="{{ secure_asset('/assets2/js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ secure_asset('/assets2/js/popper.min.js') }}"></script>
+    <script src="{{ secure_asset('/assets2/js/bootstrap.min.js') }}"></script>
+    <script src="{{ secure_asset('/assets2/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ secure_asset('/assets2/js/jquery.waypoints.min.js') }}"></script>
+    <script src="{{ secure_asset('/assets2/js/aos.js') }}"></script>
 
-    <script src="{{ asset('/assets2/js/jquery.magnific-popup.min.js') }}"></script>
-    <script src="{{ asset('/assets2/js/magnific-popup-options.js') }}"></script>
+    <script src="{{ secure_asset('/assets2/js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ secure_asset('/assets2/js/magnific-popup-options.js') }}"></script>
     
 
-    <script src="{{ asset('/assets2/js/main.js') }}"></script>
+    <script src="{{ secure_asset('/assets2/js/main.js') }}"></script>
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript">      
