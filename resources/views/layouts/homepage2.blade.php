@@ -106,7 +106,7 @@
             </div>
           @endforeach
         @else
-          <div class="slider-item" style="background-image: url('{{ secure_assetsecure_asset('assets2/img/header1.jpg') }}');">
+          <div class="slider-item" style="background-image: url('{{ secure_asset('assets2/img/header1.jpg') }}');">
             <div class="container">
               <div class="row slider-text align-items-center justify-content-center">
                 <div class="col-md-8 text-center col-sm-12 ">
